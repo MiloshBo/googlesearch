@@ -25,8 +25,9 @@ def my_func(search_str):
         webbrowser.open('http://google.com' + linkElems[i].get('href'))
  
 def test_it(args):
-    print(args[1:])
-    my_func(args[1:])
+    print(args)
+    my_func(args)
   
 if __name__ == '__main__':
-    test_it(sys.argv)
+    client = input("Hi! Please add search term: ")
+    test_it(client)
